@@ -89,10 +89,10 @@ The four panels below show the effect of the shape parameter `a` and folding par
 
 ![Figure 2](examples/figure2.png)
 
-- **(a)** `a=0.60, f=0` -- Nearly uniform, slight N-S elongation
-- **(b)** `a=0.90, f=0` -- Stronger bi-directional concentration along N-S
-- **(c)** `a=0.60, f=0.4` -- Mild folding toward the prevailing direction (N)
-- **(d)** `a=0.90, f=0.4` -- Strong uni-directional concentration toward N
+- **(a)** `a=0.68, f=0` -- Moderate bi-directional concentration along E-W
+- **(b)** `a=0.90, f=0` -- Stronger bi-directional concentration along E-W
+- **(c)** `a=0.68, f=0.4` -- Mild folding toward the prevailing direction (E)
+- **(d)** `a=0.90, f=0.4` -- Strong uni-directional concentration toward E
 
 ## Mixture model (Figure 4 from the paper)
 

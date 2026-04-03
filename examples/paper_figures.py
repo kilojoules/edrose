@@ -14,13 +14,13 @@ def figure2():
     """Reproduce Figure 2 from Hart (2025).
 
     Four example generalised elliptical wind roses:
-      (a) a=0.60, f=0    (b) a=0.90, f=0
-      (c) a=0.60, f=0.4  (d) a=0.90, f=0.4
+      (a) a=0.68, f=0    (b) a=0.90, f=0
+      (c) a=0.68, f=0.4  (d) a=0.90, f=0.4
     """
     cases = [
-        {"a": 0.60, "f": 0.0, "label": "(a) a=0.60, f=0"},
+        {"a": 0.68, "f": 0.0, "label": "(a) a=0.68, f=0"},
         {"a": 0.90, "f": 0.0, "label": "(b) a=0.90, f=0"},
-        {"a": 0.60, "f": 0.4, "label": "(c) a=0.60, f=0.4"},
+        {"a": 0.68, "f": 0.4, "label": "(c) a=0.68, f=0.4"},
         {"a": 0.90, "f": 0.4, "label": "(d) a=0.90, f=0.4"},
     ]
 
@@ -35,8 +35,6 @@ def figure2():
 
         ax.bar(wd_rad, wr.sector_frequencies, width=width * 0.85,
                color="steelblue", alpha=0.8)
-        ax.set_theta_zero_location("N")
-        ax.set_theta_direction(-1)
         ax.set_title(case["label"], fontsize=11, pad=15)
 
     fig.suptitle("Figure 2: Example generalised elliptical wind direction roses",
@@ -64,8 +62,6 @@ def figure4():
 
     ax.bar(wd_rad, mix.sector_frequencies, width=width * 0.85,
            color="steelblue", alpha=0.8)
-    ax.set_theta_zero_location("N")
-    ax.set_theta_direction(-1)
     ax.set_title(
         "Figure 4: Mixture model (tri-modal)\n"
         "$(a_1, f_1, \\theta_1)=(0.8, 0.1, 180°)$, w=0.85\n"
