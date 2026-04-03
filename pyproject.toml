@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edrose"
+version = "0.1.0"
+description = "Elliptical parameterisation of the wind direction rose"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "scipy",
+]
+
+[project.optional-dependencies]
+plot = ["matplotlib"]
+pywake = ["py_wake"]
+dev = ["pytest", "matplotlib"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
