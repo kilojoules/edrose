@@ -550,6 +550,8 @@ class EllipticalWindRose:
             color="crimson",
         )
 
+        ax.set_theta_zero_location("N")
+        ax.set_theta_direction(-1)
         ax.legend(loc="upper right", bbox_to_anchor=(1.3, 1.1), fontsize=8)
 
         title_parts = [f"a={self.a:.2f}, f={self.f:.2f}"]
@@ -692,6 +694,8 @@ class MixtureEllipticalWindRose:
             label="Mixture model",
             color="crimson",
         )
+        ax.set_theta_zero_location("N")
+        ax.set_theta_direction(-1)
         ax.legend(loc="upper right", bbox_to_anchor=(1.3, 1.1), fontsize=8)
 
         if show:
