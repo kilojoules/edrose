@@ -8,7 +8,7 @@ The model parameterises a wind direction rose using ellipse geometry with just t
 |-----------|-------------|
 | `a` | Ellipse shape. `a = 1/sqrt(pi) ≈ 0.564` gives a uniform (circular) distribution. Larger values concentrate probability along the prevailing axis. |
 | `f` | Folding parameter in [0, 1]. `f = 0` gives a symmetric (bi-directional) rose; `f > 0` shifts probability toward the prevailing direction. |
-| `theta_prev` | Prevailing wind direction in degrees. |
+| `theta_prev` | Prevailing wind direction in degrees, meteorological convention: North = 0°, azimuth increasing clockwise (left-hand rule) so East = 90°, South = 180°, West = 270°. |
 
 ## Installation
 
@@ -89,10 +89,10 @@ The four panels below show the effect of the shape parameter `a` and folding par
 
 ![Figure 2](examples/figure2.png)
 
-- **(a)** `a=0.68, f=0` -- Moderate bi-directional concentration along E-W
-- **(b)** `a=0.90, f=0` -- Stronger bi-directional concentration along E-W
-- **(c)** `a=0.68, f=0.4` -- Mild folding toward the prevailing direction (E)
-- **(d)** `a=0.90, f=0.4` -- Strong uni-directional concentration toward E
+- **(a)** `a=0.68, f=0` -- Moderate bi-directional concentration along N-S
+- **(b)** `a=0.90, f=0` -- Stronger bi-directional concentration along N-S
+- **(c)** `a=0.68, f=0.4` -- Mild folding toward the prevailing direction (N)
+- **(d)** `a=0.90, f=0.4` -- Strong uni-directional concentration toward N
 
 ## Mixture model (Figure 4 from the paper)
 

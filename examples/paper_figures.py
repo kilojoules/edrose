@@ -35,6 +35,10 @@ def figure2():
 
         ax.bar(wd_rad, wr.sector_frequencies, width=width * 0.85,
                color="steelblue", alpha=0.8)
+        # Meteorological convention: North at 0 deg, azimuth increasing
+        # clockwise (left-hand rule).
+        ax.set_theta_zero_location("N")
+        ax.set_theta_direction(-1)
         ax.set_title(case["label"], fontsize=11, pad=15)
 
     fig.suptitle("Figure 2: Example generalised elliptical wind direction roses",
@@ -62,6 +66,10 @@ def figure4():
 
     ax.bar(wd_rad, mix.sector_frequencies, width=width * 0.85,
            color="steelblue", alpha=0.8)
+    # Meteorological convention: North at 0 deg, azimuth increasing
+    # clockwise (left-hand rule).
+    ax.set_theta_zero_location("N")
+    ax.set_theta_direction(-1)
     ax.set_title(
         "Figure 4: Mixture model (tri-modal)\n"
         "$(a_1, f_1, \\theta_1)=(0.8, 0.1, 180°)$, w=0.85\n"
